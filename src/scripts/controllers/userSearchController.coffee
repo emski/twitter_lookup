@@ -21,7 +21,7 @@ class Controller
 
 		$scope.getUserRepos = (user)->
 			# don't reload if the same user is already loaded
-			if gitService.user and gitService.user.login is user.login 
+			if gitService.user and gitService.user.login is user.login
 				$location.url '/users/' + user.login + '/repos'
 				return
 
