@@ -1,0 +1,61 @@
+{
+  "name": "twitter_lookup",
+  "version": "1.0.0",
+  "authors": [
+    "Maksim Makarevich"
+  ],
+  "config": {
+    "unsafe-perm":true
+  },
+  "description": "twitter_lookup app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emski/twitter_lookup.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emski/twitter_lookup/issues"
+  },
+  "homepage": "https://github.com/emski/twitter_lookup",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "express": "~3.4.6",
+    "grunt-cli": "~0.1.11",
+    "grunt": "~0.4.2",
+    "grunt-bower-task": "~0.4.0",
+    "grunt-coffeelint": "~0.0.7",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-coffee": "~0.8.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-hustler": "~4.0.5",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.3",
+    "grunt-prompt": "~0.1.2",
+    "html": "~0.0.7"
+  },
+  "scripts": {
+    "install": "grunt bower:install"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  }
+}

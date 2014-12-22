@@ -1,0 +1,31 @@
+{
+  "name": "twitter_lookup client side",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.14",
+    "angular-animate": "1.2.14",
+    "angular-route": "1.2.14",
+    "angular-resource": "1.2.14",
+    "requirejs": "2.1.9",
+    "bootstrap": "3.3.1"
+  },
+  "exportsOverride": {
+    "angular": {
+      "scripts/libs": "angular.js"
+    },
+    "angular-animate": {
+      "scripts/libs": "angular-animate.min.js"
+    },
+    "angular-route": {
+      "scripts/libs": "angular-route.min.js"
+    },
+    "angular-resource": {
+      "scripts/libs": "angular-resource.min.js"
+    },
+    "requirejs": {
+      "scripts/libs": "require.js"
+    }
+  }
+}

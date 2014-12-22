@@ -1,0 +1,33 @@
+doctype html
+html
+    head 
+        title Git User Lookup
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
+        style.
+          [ng\:cloak],
+          [ng-cloak],
+          [data-ng-cloak],
+          [x-ng-cloak],
+          .ng-cloak,
+          .x-ng-cloak {
+            display: none;
+          }
+          ng\:form {
+            display: block;
+          }
+        link(rel='stylesheet', href='/styles/main.css')
+
+
+    body(ng-app)
+        div.ng-cloak(ng-cloak)
+            .container.ng-view
+
+
+        script(data-main="scripts/main.js", src="scripts/libs/require.js")
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+div(ng-controller='userSearchController')
+	.row
+		.col-md-12
+			h1 GitHub Users
+
+	.row.well.well-sm 
+		form
+			.input-label.col-md-3 Search GitHub users
+			.input-container.col-md-7
+				input(class="form-control", ng-model='search', type="text", id='domainInput', placeholder="Enter name to search")
+			.input-container.col-md-2
+				button.btn.btn-primary(ng-click='searchUsers()') Search
+				
+	p.error.bg-danger(ng-if='isError')  {{errorMessage}}
+
+	.user-grid
+		.row(ng-repeat='user in users', ng-class-even='"row-even"')
+			.col-md-1
+				img.avatar(src='{{user.avatar_url}}')
+			.col-md-4
+				.user-label {{user.login}}
+			.col-md-7 
+				.user-label
+					a(href='', ng-click='getUserRepos(user)') Repos

@@ -1,4 +1,4 @@
 twitter_lookup
 ==============
 
-Test
+sudo npm install --unsafe-perm
